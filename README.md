@@ -9,5 +9,5 @@ website para treino
 :package:nova funcionalidade
 :up: atualização
 :beetle:correção de bug
-:checkred:release
+:boom:release
 
