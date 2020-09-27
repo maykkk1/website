@@ -7,7 +7,7 @@ website para treino
 ## Ícones 
 
 :package:nova funcionalidade
-:up:atualização
-:beatle:correção de bug
-:checkered:release
+:up: atualização
+:beetle:correção de bug
+:checkred:release
 
