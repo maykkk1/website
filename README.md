@@ -1,4 +1,5 @@
 # website
+
 website para treino
 
 ## Tarefas 
@@ -6,8 +7,8 @@ website para treino
 
 ## Ícones 
 
-:package:nova funcionalidade
-:up: atualização
-:beetle:correção de bug
-:boom:release
+- :package:nova funcionalidade
+- :up: atualização
+- :beetle:correção de bug
+- :boom:release
 
