@@ -10,8 +10,12 @@
 
 :root {
     --font-primary: "Baloo Da 2", serif;
-    --font-secundary: 'JosefinSlab', serif;
+    --font-secundary: 'Josefin Slab', serif;
     --font-action: "Mulish", serif ;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -355,6 +359,7 @@ header {
 
 .sessao-projetos {
     background-color: rgb(245, 245, 245);
+    padding-bottom: 5rem;
 }
 
 .projetos {
@@ -431,4 +436,215 @@ header {
 .card:hover .card-info {
     opacity: 1;
     visibility: visible;
+}
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 55, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    display: flex;
+    height: 30rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(imgs/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+
+}
+ 
+.input-group {
+    position: relative;
+}
+
+.input-group textarea {
+    max-width: 30rem;
+    max-height: 6rem;
+}
+
+.field {
+    background-color: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 1px gray dashed;
+    height: 3rem;
+    outline: none;
+    margin: 1.5rem 0;
+
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.btn-submit {
+    font-family: var(--font-action);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    color: white;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+
+}
+
+.sessao-orcamento {
+    width: 100%;
+    height: 100vh;
+    background: url(./imgs/orcamento.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff80;   
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem black; 
+    position: relative;
+}
+
+.sessao-orcamento h1 {
+    position: absolute;  
+    top: -2.5rem;
+    left: 2rem;   
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0 3rem;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem black; 
+    border-radius: 10px;
+}
+
+.sessao-orcamento form {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label {
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"] {
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;    
+    outline: none;
+    border-radius: 10px;   
+    border: none; 
+    padding: 0.3rem;
+}
+
+.btn-orcamento {
+    text-transform: uppercase;
+    padding: 1rem 2rem ;
+    border-radius: 10px;
+    border: none;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-column: 2;
+    color: white;
+    font-family: var(--font-action);
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 101;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

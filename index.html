@@ -20,7 +20,7 @@
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <header>
+        <header id="Home">
             <div class="img-wrapper">
                 <img src="imgs/bg.jpg" alt="">
             </div>
@@ -35,11 +35,11 @@
         <aside class="sideBar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#Home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#Conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#Projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#Contatos" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#Orçamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -49,7 +49,7 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="Conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="Projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -163,7 +163,80 @@
             </div>
         </section>
 
+        <section class="sessao-contato" id="Contatos">
+            <div class="contato-wrapper">
+                <div class="contato-left"> </div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
 
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-orcamento" id="Orçamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="">layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo"></label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn-orcamento" type="submit">Enviar</button>
+                </form>
+
+            </div>
+
+
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p> 
+                    Copyright &copy; 2020 - Todos os direitos reservados. 
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li class="li"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="li"><a href=""><i class="fab fa-github-square"></i></a></li>
+                        <li class="li"><a href=""><i class="fab fa-twitter-square"></i></i></a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </footer>
+        <a href="" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
 
